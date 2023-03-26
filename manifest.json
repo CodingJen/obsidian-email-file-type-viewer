@@ -1,11 +1,11 @@
 {
-	"id": "obsidian-sample-plugin",
-	"name": "Sample Plugin",
-	"version": "1.0.0",
+	"id": "obsidian-email-file-viewer",
+	"name": "Email File Viewer",
+	"version": "0.0.1",
 	"minAppVersion": "0.15.0",
-	"description": "This is a sample plugin for Obsidian. This plugin demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"description": "This plugin displays the contents of an email. Choose between text or html component, display headers, etc. It uses Postal Mime to do the heavy lifting.",
+	"author": "Jennifer Fix",
+	"authorUrl": "https://jenniferfix.ca",
+	"fundingUrl": "https://jenniferfix.ca/funding",
 	"isDesktopOnly": false
 }
