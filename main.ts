@@ -25,7 +25,7 @@ export default class MyPlugin extends Plugin {
 	settings: MyPluginSettings;
 
 	async onload() {
-		console.log("onload: obsidian-email-file-type-viewer");
+		console.log("here");
 		this.registerView(
 			VIEW_TYPE_EMAIL,
 			(leaf: WorkspaceLeaf) => new EmailView(leaf)
@@ -36,14 +36,14 @@ export default class MyPlugin extends Plugin {
 		// await this.loadSettings();
 
 		// This creates an icon in the left ribbon.
-		//const ribbonIconEl = this.addRibbonIcon(
-		//	"dice",
-		//	"Sample Plugin",
-		//	(evt: MouseEvent) => {
-		//		// Called when the user clicks the icon.
-		//		new Notice("This is a notice!");
-		//	}
-		//);
+		// const ribbonIconEl = this.addRibbonIcon(
+		// 	"dice",
+		// 	"Sample Plugin",
+		// 	(evt: MouseEvent) => {
+		// 		// Called when the user clicks the icon.
+		// 		new Notice("This is a notice!");
+		// 	}
+		// );
 		// // Perform additional things with the ribbon
 		// ribbonIconEl.addClass("my-plugin-ribbon-class");
 
