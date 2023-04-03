@@ -1,4 +1,4 @@
-import { sanitizeHTMLToDom, TextFileView } from "obsidian";
+import { Menu, MenuItem, sanitizeHTMLToDom, TextFileView } from "obsidian";
 import PostalMime from "postal-mime";
 
 export const VIEW_TYPE_EMAIL = "email-view";
@@ -7,6 +7,8 @@ export class EmailView extends TextFileView {
 	headerView: HTMLElement;
 	bodyView: HTMLElement;
 	htmlFrame: HTMLElement;
+	viewMenu: Menu;
+	blahMenuItem: MenuItem;
 
 	getViewData() {
 		return this.data;
@@ -26,12 +28,7 @@ export class EmailView extends TextFileView {
 
 		//messageText?.forEach((line) => this.bodyView.createDiv({ text: line }));
 
-		console.log(sanitizedMessage);
 		this.contentEl.appendChild(sanitizedMessage);
-
-		//console.log(this.htmlFrame);
-
-		//this.contentEl.createDiv({ text: this.data });
 	}
 
 	async onOpen() {
