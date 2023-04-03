@@ -6,6 +6,5 @@
 	"description": "This plugin displays the contents of an email. Choose between text or html component, display headers, etc. It uses Postal Mime to do the heavy lifting.",
 	"author": "Jennifer Fix",
 	"authorUrl": "https://jenniferfix.ca",
-	"fundingUrl": "https://jenniferfix.ca/funding",
 	"isDesktopOnly": false
 }
