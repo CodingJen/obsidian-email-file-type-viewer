@@ -104,7 +104,9 @@ export default class MyPlugin extends Plugin {
 		// );
 	}
 
-	onunload() {}
+	onunload() {
+		this.app.workspace.detachLeavesOfType(VIEW_TYPE_EMAIL);
+	}
 
 	async loadSettings() {
 		this.settings = Object.assign(
